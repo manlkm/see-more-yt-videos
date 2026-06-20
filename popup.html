@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>See More YT Videos</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>See More YT Videos</h1>
+    <p class="subtitle">Customize YouTube video grid size</p>
+  </header>
+
+  <main>
+    <div class="slider-container">
+      <div class="value-display">
+        <span class="label">Videos per row</span>
+        <span class="value" id="currentValue">5</span>
+      </div>
+
+      <input
+        type="range"
+        id="itemsPerRow"
+        min="3"
+        max="8"
+        value="5"
+        step="1"
+      >
+
+      <div class="range-labels">
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p class="hint">Drag the slider to adjust instantly — no refresh needed</p>
+    <p class="author">developed by <strong>Bicoder</strong></p>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
