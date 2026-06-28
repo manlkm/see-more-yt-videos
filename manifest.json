@@ -1,9 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "See More YT Videos",
-  "version": "1.0.0",
+  "name": "__MSG_extensionName__",
+  "version": "1.1.2",
   "author": "Bicoder",
-  "description": "Customize the YouTube homepage video grid to show more videos per row. Designed for laptop users.",
+  "default_locale": "en",
+  "description": "__MSG_extensionDescription__",
   "permissions": [
     "storage",
     "tabs"

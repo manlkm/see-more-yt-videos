@@ -120,5 +120,19 @@ function initialize() {
   });
 }
 
+/**
+ * Set version badge from manifest
+ */
+function setVersionBadge() {
+  const badge = document.getElementById('versionBadge');
+  if (badge) {
+    const version = chrome.runtime.getManifest().version;
+    badge.textContent = `v${version}`;
+  }
+}
+
 // Start
-document.addEventListener('DOMContentLoaded', initialize);
+document.addEventListener('DOMContentLoaded', () => {
+  setVersionBadge();
+  initialize();
+});
